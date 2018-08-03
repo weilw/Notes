@@ -109,7 +109,8 @@ Prototype是原型类型，它在我们创建容器的时候并没有实例化�
 
 BeanPostProcessor 可以对 bean（或对象）实例进行操作，这意味着 Spring IoC 容器实例化一个 bean 实例，然后 BeanPostProcessor 接口进行它们的工作。
 
-ApplicationContext 会自动检测由 BeanPostProcessor 接口的实现定义的 bean，注册这些 bean 为后置处理器，然后通过在容器中创建 bean，在适当的时候调用它。`<!--<bean class="com.weilw.exam.BeanPostProcessor.InitHelloWorld"/>-->`
+ApplicationContext 会自动检测由 BeanPostProcessor 接口的实现定义的 bean，注册这些 bean 为后置处理器，然后通过在容器中创建 bean，在适当的时候调用它。  
+`<bean class="com.weilw.exam.BeanPostProcessor.InitHelloWorld"/>`
 
 ## Spring Bean定义继承和模板
 子 bean 的定义继承父定义的配置数据。子定义可以根据需要重写一些值，或者添加其他值。
